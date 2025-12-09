@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Archive | Data & Scripts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Project Archive</h1>
+        <p class="subtitle">Secure storage for machine learning datasets and execution scripts. Accessible, fast, and reliable.</p>
+    </header>
+
+    <div class="controls-container">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search files...">
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="py">Python</button>
+            <button class="filter-btn" data-filter="csv">Data</button>
+        </div>
+    </div>
+
+    <main id="fileGrid" class="file-grid">
+        <!-- Files will be injected here via JavaScript -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
